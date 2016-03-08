@@ -16,7 +16,7 @@
     <div class="well">Guess the number between 1 and 1000</div>
     <div ng-if="game.delta !== 0">
       <input type="text" ng-model="game.guess">
-      <button ng-click="game.handleUserGuess(guess)" class="btn btn-success">Guess!</button>
+      <button ng-click="game.handleUserGuess(game.guess)" class="btn btn-success">Guess!</button>
     </div>
   </section>
   <hr>
