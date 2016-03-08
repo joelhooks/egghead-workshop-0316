@@ -3,6 +3,9 @@ angular.module('exampleApp', [])
     var example = this;
 
     example.sortField = 'name';
+    example.filterOptions = {
+      debounce: 250
+    };
 
     example.updateSortField = function(sortField) {
       if(sortField === example.sortField) {
