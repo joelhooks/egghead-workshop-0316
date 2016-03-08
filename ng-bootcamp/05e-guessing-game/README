@@ -1,0 +1,11 @@
+Guessing game:
+
+The user can input a number and submit it. The number will be compared to a property on the controller. If the user guesses correctly it will display the message and hide the input/button. If the user guesses incorrectly, a message is displayed indicating a high or low guess. With every guess, any previous messages should be removed. The number of guesses will also be tracked and displayed.
+
+1. Import angular and create an application module in an app.js file
+2. create the controller using the "controller as" syntax. Add it to the body.
+3. Add a random number as a variable to the controller Math.floor(Math.random() * 6) + 1
+4. Create an input and a button. Pass the value of the input to a method on the controller when the user clicks the button
+5. convert the guess to a number, and compare it to the random value to determine if it is a match, or if it is higher or lower
+6. display the appropriate message using ng-if
+7. increment the counter
