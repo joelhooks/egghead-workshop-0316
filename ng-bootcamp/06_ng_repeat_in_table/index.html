@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" ng-app="exampleApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Training</title>
+  <script src="../vendor/angular/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="ExampleCtrl as example">
+  <input type="text" ng-model="example.newPerson">
+  <button ng-click="example.addPerson(example.newPerson)">Add</button>
+  <ul>
+    <li ng-repeat="person in example.people track by $index">
+      {{person}}
+    </li>
+  </ul>
+
+  <div ng-repeat="person in example.people track by $index">{{person}}</div>
+</body>
+</html>
