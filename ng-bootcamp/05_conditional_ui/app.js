@@ -7,4 +7,10 @@ angular.module('exampleApp', [])
       example.message = '';
     }
   })
+  .controller('HiddenCtrl', function() {
+    console.log('HELLOOOOOOOO!!!!1!!');
+  })
+  .controller('HiddenCtrl2', function() {
+    console.log('GOODBYE!!!!1!');
+  })
 ;

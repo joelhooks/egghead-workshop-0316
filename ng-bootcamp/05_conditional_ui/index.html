@@ -9,10 +9,13 @@
 <body>
 
 <div ng-controller="ExampleCtrl as example">
+  <h1 ng-if="!example.displayMessage" ng-controller="HiddenCtrl">Please Submit Some Text</h1>
+  <h1 ng-show="!example.displayMessage" ng-controller="HiddenCtrl2">Please Submit Some Text</h1>
+  <h1 ng-hide="!example.displayMessage" ng-controller="HiddenCtrl2">Thanks!</h1>
+
   <h2>{{example.displayMessage}}</h2>
   <input type="text" ng-model="example.message">
   <button ng-click="example.onSubmit(example.message)">Submit</button>
-  <h1 ng-mouseenter="example.onSubmit('silly nonsense')">Mouse Over Here</h1>
 </div>
 
 </body>
