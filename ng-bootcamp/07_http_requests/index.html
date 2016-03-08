@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="exampleApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Training</title>
+  <link rel="stylesheet" href="../vendor/bootstrap-css/css/bootstrap.css">
+  <script src="../vendor/angular/angular.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="ExampleCtrl as example">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Company</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in example.people">
+        <td>{{person.name}}</td>
+        <td>{{person.phone}}</td>
+        <td>{{person.company}}</td>
+        <td>{{person.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
