@@ -6,7 +6,8 @@ angular.module('exampleApp', [])
   .directive('headline', function() {
     return {
       restrict: 'E',
-      template: '<h1>This is the headline!</h1>'
+      transclude: true,
+      template: '<h1>This is the headline!</h1> <div ng-transclude></div>'
     }; // Directive Definition Object DDO
   })
   .directive('headlineExternal', function() {
