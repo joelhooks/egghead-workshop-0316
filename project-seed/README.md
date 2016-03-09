@@ -1,6 +1,8 @@
 
 ## Up & Running
 This project uses [node.js](http://nodejs.org/). You will need to install node. The `node -v` should be >= 4.0 and `npm -v` should be >= 3.0.
+
+npm can be updated to latest using `npm install npm -g`. This might be required if you installed the node LTS 4.x version.
   
   We will need some global libraries.
   
