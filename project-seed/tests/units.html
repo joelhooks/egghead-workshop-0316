@@ -9,18 +9,18 @@
     <h1>Unit Test Results</h1>
     <table cellspacing="0" cellpadding="0" border="0">
       <tr class="overview">
-        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1">Browser: PhantomJS 2.1.1 (Mac OS X 0.0.0)</td>
+        <td colspan="3" title="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36">Browser: Chrome 48.0.2564 (Mac OS X 10.11.2)</td>
       </tr>
       <tr class="overview">
-        <td colspan="3">Timestamp: 3/9/2016, 3:26:29 PM</td>
+        <td colspan="3">Timestamp: 3/9/2016, 4:33:32 PM</td>
       </tr>
       <tr>
         <td colspan="3">
-          9 tests / 
-          1 errors / 
-          1 failures / 
+          11 tests / 
+          0 errors / 
+          0 failures / 
           8 skipped / 
-          runtime: 0.009s
+          runtime: 0.035s
         </td>
       </tr>
       <tr class="header">
@@ -28,21 +28,20 @@
         <td>Spec</td>
         <td>Suite / Results</td>
       </tr>
-      <tr class="fail">
-        <td>Failed</td>
+      <tr class="pass">
+        <td>Passed in 0.027s</td>
         <td>should create an instance</td>
-        <td>
-          user-list
-          <br />forEach@/Users/joel/Code/workshops/farm-credit-egghead-workshop/project-seed/build/vendor.js:11036:24
-loadModules@/Users/joel/Code/workshops/farm-credit-egghead-workshop/project-seed/build/vendor.js:15202:12
-createInjector@/Users/joel/Code/workshops/farm-credit-egghead-workshop/project-seed/build/vendor.js:15124:30
-workFn@/Users/joel/Code/workshops/farm-credit-egghead-workshop/project-seed/node_modules/angular-mocks/angular-mocks.js:2799:60
-/Users/joel/Code/workshops/farm-credit-egghead-workshop/project-seed/build/vendor.js:15242:53
-
-          <br />Expected undefined to be defined.
-/Users/joel/Code/workshops/farm-credit-egghead-workshop/project-seed/src/app/user-list/user-list.spec.js:10:33
-
-        </td>
+        <td>user-list</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.006s</td>
+        <td>should call getUsers on the userService</td>
+        <td>user-list</td>
+      </tr>
+      <tr class="pass">
+        <td>Passed in 0.002s</td>
+        <td>should set users with getUsers result</td>
+        <td>user-list</td>
       </tr>
       <tr class="skip">
         <td>Skipped</td>

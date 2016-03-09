@@ -1,4 +1,6 @@
-angular.module('ps.user-list', ['ps.services.user-service'])
+angular.module('ps.user-list', [
+    'ui.router'
+])
   .config(function($stateProvider) {
     $stateProvider
       .state('userList', {
