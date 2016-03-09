@@ -1,0 +1,23 @@
+<input type="text"
+       ng-model="peopleList.filterText.name"
+       ng-model-options="peopleList.filterOptions">
+<input type="text"
+       ng-model="peopleList.filterText.company">
+<table class="table">
+  <thead>
+  <tr>
+    <th ng-click="peopleList.updateSortField('name')">Name</th>
+    <th ng-click="peopleList.updateSortField('phone')">Phone</th>
+    <th ng-click="peopleList.updateSortField('company')">Company</th>
+    <th ng-click="peopleList.updateSortField('email')">Email</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="person in people | filter:peopleList.filterText | orderBy: peopleList.sortField">
+    <td>{{person.name}}</td>
+    <td>{{person.phone}}</td>
+    <td>{{person.company}}</td>
+    <td>{{person.email}}</td>
+  </tr>
+  </tbody>
+</table>
