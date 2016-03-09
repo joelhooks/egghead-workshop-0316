@@ -1,4 +1,4 @@
-angular.module('ps.user-list', [])
+angular.module('ps.user-list', ['ps.services.user-service'])
   .config(function($stateProvider) {
     $stateProvider
       .state('userList', {
@@ -7,10 +7,11 @@ angular.module('ps.user-list', [])
         controller: 'UserListCtrl as userList'
       })
   })
-  .controller('UserListCtrl', function UserListCtrl($http, baseApiUrl) {
+  .controller('UserListCtrl', function UserListCtrl(userService) {
     var userList = this;
-    $http.get(baseApiUrl + '/users').then(function (results) {
-      userList.users = results.data;
+
+    userService.getUsers().then(function (users) {
+      userList.users = users;
     })
   })
 ;
