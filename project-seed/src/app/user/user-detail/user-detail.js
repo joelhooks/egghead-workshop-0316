@@ -3,7 +3,7 @@ angular.module('ps.user-detail', [])
     $stateProvider
       .state('userDetail', {
         url: '/users/:username',
-        templateUrl: 'user-detail/user-detail.tpl.html',
+        templateUrl: 'user/user-detail/user-detail.tpl.html',
         controller: 'UserDetailCtrl as userDetail'
       })
   })

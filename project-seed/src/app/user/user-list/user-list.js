@@ -3,7 +3,7 @@ angular.module('ps.user-list', ['ps.services.user-service'])
     $stateProvider
       .state('userList', {
         url: '/users',
-        templateUrl: 'user-list/user-list.tpl.html',
+        templateUrl: 'user/user-list/user-list.tpl.html',
         controller: 'UserListCtrl as userList'
       })
   })
