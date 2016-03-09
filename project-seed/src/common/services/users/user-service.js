@@ -1,4 +1,6 @@
-angular.module('ps.services.user-service', [])
+angular.module('ps.services.user-service', [
+    "project-seed.config.constants"
+])
   .service('userService', function UserService($http, baseApiUrl) {
     var userService = this;
 
